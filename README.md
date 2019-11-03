@@ -10,7 +10,8 @@ Given a regular chessboard (*N*x*N* dimensions) and *N* queens, the problem with
 another queen. Figure 1 illustrates the capture area of a queen positioned on
 the board horizontally, vertically or diagonally.
 
-![](media/cc05c236fc4446d3b928653c6aa203b4.jpg)
+![1](https://user-images.githubusercontent.com/45035051/68091323-12109100-fe5d-11e9-8cbe-ba5ff05e9f38.jpg)
+
 
 >   Figure 1: Illustration of an area where one queen can capture another queen
 >   in an 8x8 chess
@@ -64,15 +65,13 @@ violate any constraints.
 -   Stop criteria: stop when an optimal condition is found, i.e. *q*(*f*) = 0,
     or when a maximum number of generations has been reached.
 
-![](media/7244196de03a32dba2e34bd8a6e63954.jpg)
+![2](https://user-images.githubusercontent.com/45035051/68091337-35d3d700-fe5d-11e9-94d5-792bd9bd53dc.jpg)
 
 > Figure 2: Phenotype of a candidate solution
 
-![](media/7e5abb7af7fe290093d2ddc6f300b64d.jpg)
+![3](https://user-images.githubusercontent.com/45035051/68091341-3ec4a880-fe5d-11e9-99d9-6e2a4ff6d85e.jpg)
 
 > Figure 3: Corresponding Genotype to the Phenotype illustrated in the Figure 2
-
-.
 
 **Assignment 1:** Implement a GA for the *N*-queens problem by considering a fixed
 size 8x8 board. Check with how many generations on average your algorithm is
@@ -90,12 +89,10 @@ two-dimensional function and later generalized by Muhlenbein et al. [2].
 **Assignment 2**: The goal is to implement a GA and apply it to minimize the
 Rastrigin function with *n =10* variables.
 
-![](media/30ea9f45770817cf7ac8db7aa5ae5faa.png)
-
-(1)
+![4](https://user-images.githubusercontent.com/45035051/68091344-4d12c480-fe5d-11e9-8a90-cf9b1e1e9078.png)
 
 with *xi* ∈ [−5.12,5.12]. The global minima is **x**∗ = 0, where
-*f*(**x**∗) = 0. The GA must have the following characteristics:
+f*(x∗) = 0. The GA must have the following characteristics:
 
 1.  Representation of the variables using binary codification;
 
@@ -105,9 +102,11 @@ with *xi* ∈ [−5.12,5.12]. The global minima is **x**∗ = 0, where
 
     -   Tournament with 50% of probability.
 
-3.  Crossover: 1 cutoff point per variable; iv. Mutation: bit flip.
+3.  Crossover: 1 cutoff point per variable;
 
->   v. Others operators are free to use.
+4. Mutation: bit flip;
+
+5. Others operators are free to use.
 
 Define the values of the hyper-parameters *pc* and *pm* or make a dynamic
 adjustment of them. The computational budget is 10,000 fitness function
@@ -118,7 +117,7 @@ evaluations.
 >   • The input and output parameters must be according to the following
 >   statements:
 
->   [x∗*,f*∗] = *firstname lastname*[*nvar,ncal*], being:
+>   [x∗,f∗] = *firstname lastname*[*nvar,ncal*], being:
 
 >   x∗: vector which contains the variables of the best individual; *f*∗:
 >   fitness function evaluated over x∗ ncal: total number of calls (or
