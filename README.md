@@ -1,3 +1,5 @@
+[![HitCount](http://hits.dwyl.io/hugoassisj/geneticAlgorithm.svg)](http://hits.dwyl.io/hugoassisj/geneticAlgorithm)
+
 # geneticAlgorithm
 
 Master's degree subject- Evolutionary Computation - First computer assignment
